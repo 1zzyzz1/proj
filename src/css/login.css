@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bigimg{
+    width: 100%;
+    height: 100%;
+    background: url(../static/images/reg_bg_min.jpg) no-repeat;
+    background-size: cover;
+}
+.form-tex{
+    width: 480px;
+    height: 557px;
+    background: rgba(255,255,255,.9);
+    border-radius: 12px;
+    position: absolute;
+    top: 80px;
+    right: 130px;
+}
+.form-tex h3{
+    font-size: 36px;
+    color: #000;
+    margin: 40px 0 0 40px;
+    padding-bottom: 4px;
+}
+.form-tex p{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.form-tex .letter{
+    width: 480px;
+    height: 65px;
+}
+.form-tex .letter i{
+    font-style: normal;
+    font-size: 16px;
+    color: #333;
+    width: 82px;
+    height: 40px;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 40px;
+    margin-right: 15px;
+    font-weight: 200;
+    float: left;
+}
+.letter input{
+    padding: 11px 10px;
+    max-height: 40px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 300px;
+    color: #000;
+}
+.form-tex button{
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    height: 50px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background-color: pink;
+    margin-left: 90px;
+    border: none;
+}
+.bigimg h2{
+    font-size: 60px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    left: 200px;
+    top: 440px;
+}
+.bigimg h4{
+    font-size: 32px;
+    letter-spacing: 3.81px;
+    font-weight: 300;
+    position: absolute;
+    color: white;
+    left: 200px;
+    top: 518px;
+}
+.tips{
+    display: none;
+    font-size: 12px;
+    color: red;
+    clear: left;
+    text-indent: 106px;
+}
+#getnew{
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+.letter .verifi{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 3px;
+}

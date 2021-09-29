@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../static/images/favicon.ico"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../lib/layui/layui.js"></script>
+    <script src="../js/ajax.js"></script>
+    <style>
+        .header-con .shower span{
+            color: yellowgreen;
+        }
+        .header-con .shower>div{
+            float: left;
+        }
+        .header-con .shower div:nth-of-type(1){
+            margin: 0 20px;
+        }
+        .shower{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部登录区域 -->
+    <div id="header">
+        <div class="header-con">
+            <p>您好~欢迎光临尼玛精密仪器店</p>
+            <div class="shower">
+                <div class="register"><a href="./register.html">注册 &nbsp;|</a></div>
+                <div class="login"> <a href="./login.html">登录</a></div>
+                <!-- <div>欢迎 用户<span>admin</span></div>
+                <div class="goout">退出</div> -->
+            </div>
+            <div class="header-con2">
+                <p style="border-right: 1px black solid;">设为首页</p>
+                <p>加入收藏</p>
+            </div>
+        </div>
+    </div>
+    <div id="pic">
+        <img src="../static/images/03-yiqi_02.jpg" alt="">
+    </div>
+    <!-- 列表 -->
+    <div id="banner">
+        <div class="banner-con">
+            <p style="background-color:#2a80b9;">网站首页</p>
+            <p>关于我们</p>
+            <a href="./list.html"><p>产品中心</p></a>
+            <a href="./detail.html"><p>详情页</p></a>
+            <a href="./shopcar.html"><p>购物车</p></a>
+            <p>帮助文档</p>
+            <p>联系我们</p>
+        </div>
+    </div>
+    <div class="zw-pir">
+        <!-- <img src="../static/images/banner_02.jpg" alt=""> -->
+        <link rel="stylesheet" href="../css/swiper.css">
+        <style>
+            html,
+            body {
+                position: relative;
+                height: 100%;
+            }
+
+            body {
+                background: #eee;
+                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+        </style>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: rgb(247,118,25);"><img src="http://img.alicdn.com/imgextra/i3/O1CN01Am8Sra21Zaice06ax_!!6000000006999-2-tps-1130-500.png" alt=""></div>
+                <div class="swiper-slide" style="background: rgb(232,232,232);"><img src="https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg" alt=""></div>
+                <div class="swiper-slide" style="background: rgb(1,50,80);"><img src="https://img.alicdn.com/imgextra/i3/6000000005596/O1CN01kntVM21rD15gyAIyX_!!6000000005596-0-octopus.jpg" alt=""></div>
+                <div class="swiper-slide" style="background: rgb(242,118,64);"><img src="https://img.alicdn.com/imgextra/i1/6000000002521/O1CN01aVMMDD1UUfBodszCm_!!6000000002521-0-octopus.jpg" alt=""></div>
+                <div class="swiper-slide" style="background: rgb(121,157,243);"><img src="http://img.alicdn.com/tfs/TB1_1OLxQL0gK0jSZFtXXXQCXXa-1130-500.jpg_q100.jpg_.webp" alt=""></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="../js/swiper.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </div>
+    <div class="body">
+        <div class="body-con">
+            <p><img style="margin-left: 20px;" src="../static/images/laba_03.jpg" alt=""></p>
+            <p>网站公告：</p>
+            <p>浙江仪器仪表页的现状和竞争力</p>
+            <p>低碳产业给仪器仪表业发展带来新机遇</p>
+            <p>电能表与记能仪表冰火两重天销售策略可借鉴</p>
+            <p>浙江仪器仪表页的现状和竞争力</p>
+        </div>
+    </div>
+    <div class="tbody">
+        <div class="tbody-coner">
+            <div class="tbody-con1">
+                <p class="p1">快捷导航</p>
+                <p class="p2">NEWS&nbsp; CENTER</p>
+                <img src="../static/images/con-1_03.jpg" alt="">
+            </div>
+            <div class="tbody-con2">
+                <p class="p1">新闻动态</p>
+                <p class="p2">SHORTCUT</p>
+                <input type="text" placeholder="MORE+">
+                <div class="tbody-con4">
+                    <div class="tbody-con5">
+                        <p class="p3">XX集团XX高级学院开设培训课程</p>
+                        <p class="p4">2021-03-03</p>
+                    </div>
+                    <div class="tbody-con5">
+                        <p class="p3">XX公司获得上海市值百佳</p>
+                        <p class="p4">2021-03-03</p>
+                    </div>
+                    <div class="tbody-con5">
+                        <p class="p3">奋斗奔向世界级</p>
+                        <p class="p4">2021-03-03</p>
+                    </div>
+                    <div class="tbody-con5">
+                        <p class="p3">加快自主创新转型步伐，实现跨越式</p>
+                        <p class="p4">2021-03-03</p>
+                    </div>
+                    <div class="tbody-con5">
+                        <p class="p3">XX集团XX高级学院开设培训课程</p>
+                        <p class="p4">2021-03-03</p>
+                    </div>
+                    <div class="tbody-con5">
+                        <p class="p3">XX公司获得上海市值百佳</p>
+                        <p class="p4">2021-03-03</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tbody-con3">
+                <p class="p1">关于我们</p>
+                <p class="p2">ABOUT &nbsp;US</p>
+                <img src="../static/images/con-3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 产品展示渲染 -->
+    <div id="foot">
+        <div class="foot-con1">
+            <h4>产品展示</h4>
+            <p>PRODUCTS</p>
+            <input type="text" placeholder="MORE+">
+        </div>
+        <div class="foot-con2">
+            <div class="box" style="background-color: pink;">
+                <img src="../static/images/bot_03.jpg" alt="">
+                <h3>图片介绍</h3>
+                <p>很长的一段文字介绍</p>
+            </div>            
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-coner">
+            <div class="footer-con1">
+                <p class="p1">视频展示</p>
+                <p class="p2">VIDEOS</p>
+                <img src="../static/images/movie.png" alt="">
+            </div>
+            <div class="footer-con2">
+                <div class="footer-con2">
+                    <p class="p1">新闻动态</p>
+                    <p class="p2">SHORTCUT</p>
+                    <input type="text" placeholder="MORE+">
+                    <div class="footer-con4">
+                        <div class="footer-con5">
+                            <p class="p3">XX集团XX高级学院开设培训课程</p>
+                            <p class="p4">2021-03-03</p>
+                        </div>
+                        <div class="footer-con5">
+                            <p class="p3">XX公司获得上海市值百佳</p>
+                            <p class="p4">2021-03-03</p>
+                        </div>
+                        <div class="footer-con5">
+                            <p class="p3">奋斗奔向世界级</p>
+                            <p class="p4">2021-03-03</p>
+                        </div>
+                        <div class="footer-con5">
+                            <p class="p3">加快自主创新转型步伐，实现跨越式</p>
+                            <p class="p4">2021-03-03</p>
+                        </div>
+                        <div class="footer-con5">
+                            <p class="p3">XX集团XX高级学院开设培训课程</p>
+                            <p class="p4">2021-03-03</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-con3">
+                <p class="p1">联系方式</p>
+                <p class="p2">ABOUT &nbsp;US</p>
+                <img src="../static/images/movie-1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="zw-foot">
+        <div class="zw-footheart">
+            <img src="../static/images/foot.png" alt="">
+            <p>百度</p>
+            <p>谷歌</p>
+            <p>腾讯</p>
+            <p>搜狐</p>
+            <p>新浪</p>
+            <p>腾讯</p>
+            <p>微博</p>
+            <p>火狐</p>
+            <p>天美</p>
+            <p>尼玛</p>
+            <p>百度</p>
+            <p>百度</p>
+        </div>
+    </div>
+    <div id="infor">
+        <p>网站首页</p>
+        <p>关于我们</p>
+        <p>产品中心</p>
+        <p>新闻中心</p>
+        <p>在线留言</p>
+        <p>帮助文档</p>
+        <p>联系我们</p>
+    </div>
+    <div class="copy">
+        <div class="copy-con">
+            <p>COPYRIGHT&nbsp;2009-2011WWW.YOUREBME.COM &nbsp;ALL RIGHTS &nbsp;RERNESP
+                <br>版权所有 您的网站名称 未经允许 禁止复制 沪ICP备
+            </p>
+        </div>
+    </div>
+    <div class="totop">
+        <p style="margin-top: 6px;">回到</p>
+        <p>顶部</p>
+    </div>
+</body>
+
+</html>
+<script src="../js/index.js"></script>

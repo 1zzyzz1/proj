@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  /*******************顶部信息栏开始***********/
+  #header{
+    width: 100%;
+    height: 36px;
+    background-color: #ecf0f1;
+    overflow: hidden;
+  }
+  .header-con{
+    width: 1200px;
+    height: 18px;
+    /* background-color: red; */
+    margin: 9px auto 0;
+  }
+  .header-con p{
+    float: left;
+  }
+  .header-con .register{
+    margin-left: 40px;
+    float: left;
+    font-size: 18px;
+  }
+  .header-con .login{
+    float: left;
+    font-size: 18px;
+  }
+  .header-con2{
+    float: right;
+  }
+  .header-con2 p{
+    padding: 0 10px;
+  }
+  #pic{
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+  }
+  #pic img{
+    width: 100%;
+    height: 100%;
+  }
+  /*****************图片区域结束*******************/
+  /****************导航区域开始*******************/
+  #banner{
+    width: 100%;
+    height: 50px;
+    background-color: #3598db;
+  }
+  .banner-con p{
+    width: 13%;
+    height: 50px;
+    float:left;
+    font-size:15px;
+    margin: 0 0 0 10px;
+    line-height:50px;
+    color: white;
+    text-align: center;
+  }
+.shop{
+    font-size: 30px;
+    text-indent: 100px;
+}
+.shop span a{
+    color: red;
+    font-size: 32px;
+    font-style: italic;
+}

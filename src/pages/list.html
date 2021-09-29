@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>列表页</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../lib/layui/layui.js"></script>
+    <script src="../js/ajax.js"></script>
+</head>
+<style>
+    .header-con .shower span{
+        color: yellowgreen;
+    }
+    .header-con .shower>div{
+        float: left;
+    }
+    .header-con .shower div:nth-of-type(1){
+        margin: 0 20px;
+    }
+    .shower{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- 顶部登录区域 -->
+    <div id="header">
+        <div class="header-con">
+            <p>您好~欢迎光临尼玛精密仪器店</p>
+            <div class="shower">
+                <div class="register"><a href="./register.html">注册 &nbsp;|</a></div>
+                <div class="login"> <a href="./login.html">登录</a></div>
+                <!-- <div>欢迎 用户<span>admin</span></div>
+                <div class="goout">退出</div> -->
+            </div>
+            <div class="header-con2">
+                <p style="border-right: 1px black solid;">设为首页</p>
+                <p>加入收藏</p>
+            </div>
+        </div>
+    </div>
+    <div id="pic">
+        <img src="../static/images/03-yiqi_02.jpg" alt="">
+    </div>
+    <!-- 列表 -->
+    <div id="banner">
+        <div class="banner-con">
+            <a href="./index.html"><p>网站首页</p></a>
+            <p>关于我们</p>
+            <p style="background-color:#2a80b9;">产品中心</p>
+            <a href="./detail.html"><p>详情页</p></a>
+            <a href="./shopcar.html"><p>购物车</p></a>
+            <p>帮助文档</p>
+            <p>联系我们</p>
+        </div>
+    </div>
+    <div id="test1">
+        <div class="test1-con">           
+                <div class="box">
+                    <img src="../static/images/bot_03.jpg" alt="">
+                    <h3>图片介绍</h3>
+                    <p>很长的一段文字很长的一段文字很长的一段很长的一段文字很长的一段文字很长的一段文字很长的一段文字很长的一段文字很长的一段文字文字很长的一段文字很长的一段文字很长的一段文字介绍</p>
+                    <button><a href="./detail.html">查看详情</a></button>
+                </div>                                       
+        </div>
+    </div>
+    <div class="page"></div>
+</body>
+</html>
+<!-- <script src="../js/index.js"></script> -->
+<script src="../js/page.js"></script>
+<script src="../js/list.js"></script>

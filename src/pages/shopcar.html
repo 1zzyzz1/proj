@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <script src="../lib/layui/layui.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap-3.4.1/dist/css/bootstrap.min.css">
+   
+</head>
+<style>
+    .header-con .shower span{
+        color: yellowgreen;
+    }
+    .header-con .shower>div{
+        float: left;
+    }
+    .header-con .shower div:nth-of-type(1){
+        margin: 0 20px;
+    }
+    .shower{
+        cursor: pointer;
+    }
+    table{
+            margin: 30px 0 0 100px;
+            width: 980px;
+            border-spacing:0 ;
+            border-collapse:collapse ;
+            empty-cells:show
+        }
+    thead th{
+        width: 140px;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+    }
+    tfoot td{
+        font-size: 20px;
+        text-align: center;
+    }
+    tr{
+        border-top: 1px solid black;
+    }
+    tbody>tr{
+        height: 80px;
+        text-align: center;
+        font-size: 20px;
+    }
+    tbody img{
+        width: 80px;
+        height: 80px;
+    }
+    .del{
+        width: 20px;
+        height: 40px;
+    }
+    .inc{
+        width: 20px;
+        height: 40px;
+    }
+    .tes{
+        width: 60px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+    }
+</style>
+<body>   
+    <!-- 顶部登录区域 -->
+    <div id="header">
+        <div class="header-con">
+            <p>您好~欢迎光临尼玛精密仪器店</p>
+            <div class="shower">
+                <div class="register"><a href="./register.html">注册 &nbsp;|</a></div>
+                <div class="login"> <a href="./login.html">登录</a></div>
+                <!-- <div>欢迎 用户<span>admin</span></div>
+                <div class="goout">退出</div> -->
+            </div>
+            <div class="header-con2">
+                <p style="border-right: 1px black solid;">设为首页</p>
+                <p>加入收藏</p>
+            </div>
+        </div>
+    </div>
+    <div id="pic">
+        <img src="../static/images/03-yiqi_02.jpg" alt="">
+    </div>
+    <!-- 列表 -->
+    <div id="banner">
+        <div class="banner-con">
+            <a href="./index.html"><p>网站首页</p></a>
+            <p>关于我们</p>
+            <a href="./list.html"><p>产品中心</p></a>
+            <a href="./detail.html"><p>详情页</p></a>
+            <p style="background-color:#2a80b9;">购物车</p>
+            <p>帮助文档</p>
+            <p>联系我们</p>
+        </div>
+    </div>
+
+    <div class="shop">
+        <table>
+            <thead>
+                <th><input type="checkbox" name="" id=""></th>
+                <th>产品图片</th>
+                <th>产品名称</th>
+                <th>产品价格</th>
+                <th>产品数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </thead>
+            <tbody style="max-height: 500px;overflow: scroll;">
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td><img src="" alt=""></td>
+                    <td></td>
+                    <td></td>
+                    <td><button class="del">-</button><input class="tes" type="text"><button class="inc">+</button></td>
+                    <td></td>
+                    <td><button>移除</button></td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td >产品数量:</td>
+                    <td class="tolnum"></td>
+                    <td></td>
+                    <td>总价:</td>
+                    <td class="priceAll"></td>
+                    <td><button class="btn btn-warning">去结算</button></td>
+                </tr>
+                
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
+<script src="../js/cookie.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/shopcar.js"></script>
+<script src="./shopcar.html"></script>
